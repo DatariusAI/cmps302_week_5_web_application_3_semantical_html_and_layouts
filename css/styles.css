@@ -1,126 +1,184 @@
+/* Body and General Styles */
 body {
-  font-family: Georgia, Times, Serif;
-  line-height: 150%;
-  background-color: #94A3B1;
-  margin: 0;
-  padding: 0;
+	font-family: Georgia, Times, Serif;
+	line-height: 150%;
+	margin: 0;
+	padding: 0;
+	background-color: #b8bfc4;
 }
 
+/* Wrapper - 90% width, centered */
 #wrapper {
-  width: 90%;
-  margin: 20px auto;
-  background-color: #DBDCD4;
-  border: 6px solid #2F4517;
+	width: 90%;
+	margin: 0 auto;
+	background-color: white;
+	border: 10px solid #3d5e3a;
 }
 
+/* Header */
 #header {
-  background-image: url(../Alps.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	background-image: url(Pictures/Alps.jpg);
+	background-size: 100% 100%;
+	height: 200px;
+	padding: 10px;
 }
 
 h1 {
-  font-family: Andalus;
-  font-size: 34pt;
-  color: #5e1740;
-  text-align: center;
+	font-family: Andalus;
+	font-size: 34pt;
+	text-align: center;
+	color: #5e1740;
+	margin: 0;
+	padding-top: 10px;
 }
 
+/* Navigation - Left Column */
 nav {
-  float: left;
-  width: 180px;
-  background-color: #2F4517;
-  padding: 15px 0;
+	float: left;
+	width: 180px;
+	background-color: #3d5e3a;
+	min-height: 500px;
 }
 
-nav a {
-  display: block;
-  width: 140px;
-  margin: 10px auto;
-  padding: 6px;
-  background-color: #B7C1CC;
-  color: #5e1740;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
+nav ul li {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li a {
+	display: block;
+	background-color: #88a5a1;
+	color: #5e1740;
+	text-decoration: none;
+	padding: 15px;
+	margin: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	background-color: #5e1740;
+	color: #88a5a1;
+}
+
+/* Main Content - Right Column */
 #main {
-  margin-left: 200px;
-  padding: 20px;
+	margin-left: 180px;
+	padding: 20px;
+	background-color: #d6dde3;
+	min-height: 500px;
 }
 
+/* Headings */
 h2 {
-  color: #5e1740;
-  padding: 10px;
-  width: 350px;
-  border-left: 2px solid #5e1740;
-  border-bottom: 3px solid #5e1740;
+	color: #5e1740;
+	padding: 10px;
+	width: 350px;
+	border-left: 2px solid #5e1740;
+	border-bottom: 3px solid #5e1740;
 }
 
 h3 {
-  text-decoration: underline;
-  color: #5e1740;
+	text-decoration: underline;
+	color: #5e1740;
 }
 
-dt {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
+/* Paragraph */
 p {
-  text-align: justify;
+	text-align: justify;
 }
 
-.floatLeft {
-  float: left;
-  margin-right: 25px;
-  margin-bottom: 25px;
+/* Definition List */
+dt {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
-.floatRight {
-  float: right;
-  margin-left: 25px;
-  margin-top: 0;
-}
-
-figure {
-  margin: 10px;
-}
-
-figcaption {
-  text-align: center;
-}
-
+/* Table */
 table {
-  border: 5px solid #5e1740;
-  margin-top: 15px;
+	border: 5px solid #5e1740;
+	border-collapse: collapse;
+	margin: 20px 0;
 }
 
 td, th {
-  border: 1px solid #5e1740;
-  padding: 4px;
+	border: 1px solid #5e1740;
+	padding: 8px;
 }
 
 th {
-  background-color: #5e1740;
-  color: #d6dde3;
+	background-color: #5e1740;
+	color: #d6dde3;
+}
+
+caption {
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 10px;
 }
 
 .Highest {
-  color: #A52486;
-  font-weight: bold;
-  font-style: italic;
+	color: #A52486;
+	font-weight: bold;
+	font-style: italic;
 }
 
+/* Lists */
+ol li {
+	font-weight: bold;
+}
+
+ul li {
+	font-weight: normal;
+}
+
+/* Floated Elements */
+.floatLeft {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+.floatRight {
+	float: right;
+	margin-left: 25px;
+	margin-top: 0;
+}
+
+/* Figure */
+figure {
+	margin: 10px;
+}
+
+figcaption {
+	text-align: center;
+}
+
+/* Footer */
 #footer {
-  clear: both;
-  text-align: center;
-  padding: 10px;
-  border-top: 3px solid #2F4517;
-  margin-top: 20px;
+	clear: both;
+	background-color: #d6dde3;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+#footer hr {
+	border: 0;
+	border-top: 2px solid #5e1740;
+	margin-bottom: 10px;
+}
+
+#footer a {
+	color: #5e1740;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
 }
