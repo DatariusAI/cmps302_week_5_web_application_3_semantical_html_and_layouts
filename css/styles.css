@@ -4,32 +4,41 @@ body {
 	line-height: 150%;
 	margin: 0;
 	padding: 0;
-	background-color: #b8bfc4;
+	background-color: #adb5bd;
 }
 
 /* Wrapper - 90% width, centered */
 #wrapper {
 	width: 90%;
-	margin: 0 auto;
+	max-width: 1400px;
+	margin: 20px auto;
 	background-color: white;
-	border: 10px solid #3d5e3a;
+	border: 12px solid #3d5e3a;
+	overflow: hidden;
 }
 
 /* Header */
 #header {
 	background-image: url(Pictures/Alps.jpg);
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
 	height: 200px;
 	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 3px solid #3d5e3a;
 }
 
 h1 {
-	font-family: Andalus;
-	font-size: 34pt;
+	font-family: Georgia, serif;
+	font-size: 38pt;
 	text-align: center;
 	color: #5e1740;
 	margin: 0;
-	padding-top: 10px;
+	padding: 10px 20px;
+	text-shadow: 2px 2px 4px rgba(255,255,255,0.9);
+	font-weight: bold;
 }
 
 /* Navigation - Left Column */
@@ -37,90 +46,121 @@ nav {
 	float: left;
 	width: 180px;
 	background-color: #3d5e3a;
-	min-height: 500px;
+	min-height: 700px;
+	padding: 0;
 }
 
 nav ul {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 25px 12px;
 }
 
 nav ul li {
-	margin: 0;
+	margin: 0 0 18px 0;
 	padding: 0;
 }
 
 nav ul li a {
 	display: block;
-	background-color: #88a5a1;
+	background-color: #9cb3b0;
 	color: #5e1740;
 	text-decoration: none;
-	padding: 15px;
-	margin: 10px;
+	padding: 16px 12px;
 	text-align: center;
 	font-weight: bold;
+	font-size: 15px;
+	border-radius: 2px;
+	transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
 	background-color: #5e1740;
-	color: #88a5a1;
+	color: #9cb3b0;
 }
 
 /* Main Content - Right Column */
 #main {
 	margin-left: 180px;
-	padding: 20px;
+	padding: 30px 35px;
 	background-color: #d6dde3;
-	min-height: 500px;
+	min-height: 700px;
+	overflow: auto;
 }
 
 /* Headings */
 h2 {
 	color: #5e1740;
-	padding: 10px;
-	width: 350px;
-	border-left: 2px solid #5e1740;
-	border-bottom: 3px solid #5e1740;
+	padding: 12px;
+	padding-left: 18px;
+	margin: 25px 0 18px 0;
+	max-width: 380px;
+	border-left: 4px solid #5e1740;
+	border-bottom: 5px solid #5e1740;
+	background-color: rgba(255, 255, 255, 0.4);
+	font-size: 28px;
+	font-weight: bold;
 }
 
 h3 {
 	text-decoration: underline;
 	color: #5e1740;
+	margin-top: 25px;
+	margin-bottom: 12px;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 /* Paragraph */
 p {
 	text-align: justify;
+	line-height: 1.65;
+	margin: 12px 0;
+	font-size: 15px;
 }
 
 /* Definition List */
 dt {
 	font-weight: bold;
 	text-decoration: underline;
+	margin-top: 10px;
+	color: #000;
+}
+
+dd {
+	margin-left: 25px;
+	margin-bottom: 10px;
+	line-height: 1.5;
 }
 
 /* Table */
 table {
 	border: 5px solid #5e1740;
 	border-collapse: collapse;
-	margin: 20px 0;
+	margin: 25px 0;
+	background-color: white;
+	width: auto;
 }
 
 td, th {
 	border: 1px solid #5e1740;
-	padding: 8px;
+	padding: 12px 18px;
+	text-align: left;
 }
 
 th {
 	background-color: #5e1740;
 	color: #d6dde3;
+	font-weight: bold;
+	font-size: 16px;
 }
 
 caption {
 	font-weight: bold;
-	font-size: 1.2em;
-	padding: 10px;
+	font-size: 1.3em;
+	padding: 12px;
+	color: #5e1740;
+	caption-side: top;
 }
 
 .Highest {
@@ -130,55 +170,109 @@ caption {
 }
 
 /* Lists */
+ol {
+	margin: 15px 0;
+	padding-left: 25px;
+}
+
 ol li {
 	font-weight: bold;
+	margin: 10px 0;
+	line-height: 1.6;
+}
+
+ol li ul {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding-left: 20px;
+}
+
+ol li ul li {
+	font-weight: normal;
+	margin: 5px 0;
+}
+
+ul {
+	margin: 15px 0;
+	padding-left: 25px;
 }
 
 ul li {
 	font-weight: normal;
+	margin: 6px 0;
+	line-height: 1.5;
+}
+
+ol[type="I"] li {
+	font-weight: bold;
 }
 
 /* Floated Elements */
 .floatLeft {
 	float: left;
-	margin-right: 25px;
-	margin-bottom: 25px;
+	margin-right: 28px;
+	margin-bottom: 20px;
+	margin-top: 5px;
 }
 
 .floatRight {
 	float: right;
-	margin-left: 25px;
+	margin-left: 20px;
 	margin-top: 0;
+	margin-bottom: 12px;
 }
 
 /* Figure */
 figure {
-	margin: 10px;
+	margin: 8px;
+	text-align: center;
+	background-color: transparent;
+}
+
+figure img {
+	display: block;
+	margin: 0 auto;
 }
 
 figcaption {
 	text-align: center;
+	font-style: italic;
+	margin-top: 6px;
+	font-size: 14px;
+	color: #000;
 }
 
 /* Footer */
 #footer {
 	clear: both;
 	background-color: #d6dde3;
-	padding: 10px 20px;
+	padding: 18px 25px;
 	text-align: center;
+	border-top: 2px solid #999;
+	font-size: 14px;
 }
 
 #footer hr {
 	border: 0;
 	border-top: 2px solid #5e1740;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
+	width: 100%;
 }
 
 #footer a {
 	color: #5e1740;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 #footer a:hover {
 	text-decoration: underline;
+	color: #A52486;
+}
+
+/* Clearfix for floats */
+#main::after {
+	content: "";
+	display: table;
+	clear: both;
 }
