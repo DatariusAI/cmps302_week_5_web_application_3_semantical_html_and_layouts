@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  background-image: url(Pictures/Alps.jpg);
+  background-image: url(../Alps.jpg);
   background-size: cover;
   background-position: center;
   height: 200px;
