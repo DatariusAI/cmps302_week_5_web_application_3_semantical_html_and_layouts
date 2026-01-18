@@ -1,38 +1,40 @@
-/* ===== Global ===== */
 body {
   font-family: Georgia, Times, Serif;
   line-height: 150%;
   background-color: #94A3B1;
+  margin: 0;
+  padding: 0;
 }
 
-/* ===== Wrapper ===== */
 #wrapper {
   width: 90%;
-  margin: auto;
+  margin: 20px auto;
   background-color: #DBDCD4;
+  border: 6px solid #2F4517;
 }
 
-/* ===== Header ===== */
 header {
   background-image: url(Pictures/Alps.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   height: 200px;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   font-family: Andalus;
   font-size: 34pt;
-  text-align: center;
   color: #5E1740;
+  text-align: center;
 }
 
-/* ===== Navigation ===== */
 nav {
   width: 180px;
   float: left;
-  background-color: #94A3B1;
-  padding: 10px;
+  background-color: #2F4517;
+  padding: 15px 10px;
 }
 
 nav ul {
@@ -47,11 +49,13 @@ nav li {
 
 nav a {
   display: block;
+  background-color: #94A3B1;
+  color: #5E1740;
   text-decoration: none;
-  background-color: #2F4517;
-  color: #DBDCD4;
-  padding: 8px;
   text-align: center;
+  padding: 8px;
+  font-weight: bold;
+  border: 2px solid #2F4517;
 }
 
 nav a:hover {
@@ -59,13 +63,12 @@ nav a:hover {
   color: blue;
 }
 
-/* ===== Main Content ===== */
 main {
   margin-left: 200px;
-  padding: 15px;
+  padding: 20px;
+  background-color: #DBDCD4;
 }
 
-/* ===== Headings ===== */
 h2 {
   color: #5E1740;
   padding: 10px;
@@ -79,7 +82,6 @@ h3 {
   color: #5E1740;
 }
 
-/* ===== Text ===== */
 p {
   text-align: justify;
 }
@@ -89,7 +91,6 @@ dt {
   text-decoration: underline;
 }
 
-/* ===== Tables ===== */
 table {
   border: 5px solid #5E1740;
 }
@@ -109,7 +110,6 @@ th {
   font-style: italic;
 }
 
-/* ===== Lists ===== */
 ol li {
   font-weight: bold;
 }
@@ -118,7 +118,6 @@ ul li {
   font-weight: normal;
 }
 
-/* ===== Images ===== */
 .floatLeft {
   float: left;
   margin-right: 25px;
@@ -139,10 +138,11 @@ figcaption {
   text-align: center;
 }
 
-/* ===== Footer ===== */
 footer {
   clear: both;
-  background-color: #94A3B1;
+  background-color: #DBDCD4;
+  border-top: 6px solid #2F4517;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  font-size: 0.9em;
 }
